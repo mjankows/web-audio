@@ -18,7 +18,7 @@
   <fieldset>
     <legend>Use slider to control filter cutoff frequency</legend>
     <label id="filterLabel" for="filterSlider">3200</label>
-    <input type="range" id="filterSlider" name="filterSlider" min="200" max="6200" step="10" />
+    <input type="range" id="filterSlider" name="filterSlider" min="200" max="9001" step="10" />
   </fieldset>
 </main>
 
@@ -51,7 +51,7 @@ filterSlider.addEventListener('input', function() {
 document.querySelector('#playButton').onclick = function() {
   console.log('The play button has been clicked.');
   // Play a middle C, which will sound until the stop button is clicked
-  synth.triggerAttack('C4');
+  synth.triggerAttack('A3');
 };
 
 // The following block of code will run when the stop button is clicked
